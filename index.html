@@ -15,6 +15,19 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-bg": "url('./images/yellow-bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- header -->
@@ -80,9 +93,88 @@
           </div>
         </div>
       </div>
+
+      <!-- hero section -->
+      <div class="hero min-h-[calc(100vh-65.6px)] bg-hero-bg mb-20">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Wellcome to DaisyMan</h1>
+            <p class="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn">Shop Now</button>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main></main>
+    <main class="max-w-screen-xl mx-auto">
+      <!-- Hug-collection section -->
+      <section class="p-3 mb-20">
+        <!-- Heading -->
+        <div class="text-center pb-5">
+          <h1 class="text-4xl">Huge Collection</h1>
+          <p class="text-base">Browse for a various collection</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-4">
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure>
+              <img src="./images/shoes.avif" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                incidunt ex quam doloremque culpa distinctio nam deserunt
+                reiciendis quis nostrum!
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="./images/shiny-black-leather-shoes-exude-modern-luxury-generated-by-ai_188544-36154.avif"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                incidunt ex quam doloremque culpa distinctio nam deserunt
+                reiciendis quis nostrum!
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure>
+              <img src="./images/perfume.avif" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Perfume!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                incidunt ex quam doloremque culpa distinctio nam deserunt
+                reiciendis quis nostrum!
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>
